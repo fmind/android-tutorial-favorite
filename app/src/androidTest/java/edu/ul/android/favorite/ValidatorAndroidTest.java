@@ -27,6 +27,8 @@ public class ValidatorAndroidTest {
 
     @Test
     public void isPrime() {
+        assertTrue("7 is a prime", v.isPrime("7"));
+        assertFalse("8 is not a prime", v.isPrime("8"));
     }
 
     @Test

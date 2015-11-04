@@ -5,6 +5,8 @@ import android.util.Log;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
@@ -24,6 +26,16 @@ public class ValidatorTest {
     @BeforeClass
     public static void setUpClass() {
         PowerMockito.mockStatic(Log.class);
+
+        when(log.w(anyString(), anyString())).thenAnswer(new Answer<Integer>() {
+            public Integer answer(InvocationOnMock invocation) throws Throwable {
+                String tag = (String) invocation.getArguments()[0];
+                String msg = (String) invocation.getArguments()[1];
+                System.out.println("MOCK WARNING (" + tag + "): " + msg);
+
+                return 0;
+            }
+        });
 
         v = new Validators();
         v.setLog(log);

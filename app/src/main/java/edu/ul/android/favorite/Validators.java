@@ -18,6 +18,15 @@ public class Validators {
     }
 
     public Boolean isPrime(String s) {
+        String tag = "VALIDATOR_PRIME";
+        int n = Integer.valueOf(s).intValue();
+
+        for(int i=2;i<n;i++) {
+            if(n%i==0) {
+                log.w(tag, "Is not a prime number: " + s);
+                return false;
+            }
+        }
 
         return true;
     }

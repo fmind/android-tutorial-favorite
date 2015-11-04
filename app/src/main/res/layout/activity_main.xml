@@ -42,7 +42,7 @@
             android:id="@+id/ip_check"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:clickable="true" />
+            android:clickable="false" />
 
         <Space
             android:layout_width="match_parent"
