@@ -30,16 +30,10 @@ public class ContextReaderTest {
     @Test
     public void testMyName() {
         // TODO: do the same thing here so myName always returns "com.google.search"
-        when(context.getPackageName()).thenReturn("com.google.search");
-        ContextReader reader = new ContextReader(context);
-        assertThat(reader.myName(), is("com.google.search"));
     }
 
     @Test
     public void testMyPermitted() {
         // TODO: do the same thing here so myPermitted always returns 0 for any strings
-        when(context.checkSelfPermission(anyString())).thenReturn(0);
-        ContextReader reader = new ContextReader(context);
-        assertThat(reader.myPermitted(), is(0));
     }
 }
