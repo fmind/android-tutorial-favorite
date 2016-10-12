@@ -1,6 +1,5 @@
 package edu.ul.android.favorite;
 
-import android.support.test.filters.SmallTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -23,7 +22,6 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.not;
 
 @RunWith(AndroidJUnit4.class)
-@SmallTest
 public class MainActivityTest {
 
     @Rule
