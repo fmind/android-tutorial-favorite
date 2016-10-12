@@ -1,42 +1,34 @@
 package edu.ul.android.favorite;
 
-import android.util.Log;
-
 public class Validators {
-    private Log log;
 
-    public Boolean isIp(String s) {
-        String tag = "VALIDATOR_IP";
-
-        if (!s.matches("\\d+\\.\\d+\\.\\d+\\.\\d+")) {
-            log.w(tag, "IP Does not match regexp: " + s);
-
-            return false;
-        }
-
-        return true;
+    /**
+     * Test if a string is a valid IP Address
+     * @param s the input string to test
+     * @return true if valid, else false
+     */
+    public Boolean isIpAddress(String s) {
+        // TODO: put your code here
+        return s.matches("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}");
     }
 
-    public Boolean isPrime(String s) {
-        String tag = "VALIDATOR_PRIME";
-        int n = Integer.valueOf(s).intValue();
-
-        for(int i=2;i<n;i++) {
-            if(n%i==0) {
-                log.w(tag, "Is not a prime number: " + s);
-                return false;
-            }
-        }
-
-        return true;
+    /**
+     * Test if a string is a valid Binary Value
+     * @param s the input string to test
+     * @return true if valid, else false
+     */
+    public Boolean isBinaryValue(String s) {
+        // TODO: put your code here
+        return s.matches("-?[01]+");
     }
 
-    public Boolean isByte(String s) {
-
-        return true;
-    }
-
-    protected void setLog(Log log) {
-       this.log = log;
+    /**
+     * Test if a string is a valid Hexadecimal Value
+     * @param s the input string to test
+     * @return true if valid, else false
+     */
+    public Boolean isHexadecimalValue(String s) {
+        // TODO: put your code here
+        return s.matches("-?[0-9a-fA-F]+");
     }
 }

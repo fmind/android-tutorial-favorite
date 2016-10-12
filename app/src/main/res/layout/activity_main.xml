@@ -31,14 +31,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check IP"
+            android:text="Check IP Address"
             android:id="@+id/ip_button"
             android:layout_gravity="center_horizontal" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Internal State OK"
+            android:text="IP Address valid ?"
             android:id="@+id/ip_check"
             android:layout_gravity="center_horizontal"
             android:checked="false"
@@ -54,31 +54,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Favorite Prime Number"
-            android:id="@+id/prime_label"
+            android:text="Favorite Binary Number"
+            android:id="@+id/bin_label"
             android:layout_gravity="center_horizontal" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/prime_input"
+            android:id="@+id/bin_input"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check Prime"
-            android:id="@+id/prime_button"
+            android:text="Check Binary Value"
+            android:id="@+id/bin_button"
             android:layout_gravity="center_horizontal" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Internal State OK"
-            android:id="@+id/prime_check"
+            android:text="Binary Value valid ?"
+            android:id="@+id/bin_check"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:clickable="true" />
+            android:clickable="false" />
 
         <Space
             android:layout_width="match_parent"
@@ -90,31 +90,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Favorite Byte Value (in hex)"
-            android:id="@+id/byte_label"
+            android:text="Favorite Hexadecimal Value"
+            android:id="@+id/hex_label"
             android:layout_gravity="center_horizontal" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/byte_input"
+            android:id="@+id/hex_input"
             android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Check Prime"
-            android:id="@+id/byte_button"
+            android:text="Check Hexadecimal Value"
+            android:id="@+id/hex_button"
             android:layout_gravity="center_horizontal" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Internal State OK"
-            android:id="@+id/byte_check"
+            android:text="Hexadecimal Value valid ?"
+            android:id="@+id/hex_check"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:clickable="true" />
+            android:clickable="false" />
 
     </LinearLayout>
 
