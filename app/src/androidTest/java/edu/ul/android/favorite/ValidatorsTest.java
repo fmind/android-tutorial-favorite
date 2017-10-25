@@ -1,5 +1,6 @@
 package edu.ul.android.favorite;
 
+import android.support.test.filters.SmallTest;
 import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.BeforeClass;
@@ -10,6 +11,7 @@ import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
+@SmallTest
 public class ValidatorsTest {
     private static Validators V;
 
@@ -32,10 +34,20 @@ public class ValidatorsTest {
     @Test
     public void isBinaryValue() {
         // TODO: write test assertions for .isBinaryValue
+        assertTrue(V.isBinaryValue("101010"));
+        assertFalse(V.isBinaryValue("1010A"));
+        assertTrue(V.isBinaryValue("-1010"));
+        assertFalse(V.isBinaryValue("10-10"));
     }
 
     @Test
     public void isHexadecimalValue() {
         // TODO: write test assertions for .isHexadecimalValue
+        assertTrue(V.isHexadecimalValue("123456"));
+        assertTrue(V.isHexadecimalValue("ABCDEF"));
+        assertTrue(V.isHexadecimalValue("ABC789"));
+        assertFalse(V.isHexadecimalValue("0000G"));
+        assertTrue(V.isHexadecimalValue("-0000"));
+        assertFalse(V.isHexadecimalValue("00-00"));
     }
 }

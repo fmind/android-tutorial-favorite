@@ -1,3 +1,4 @@
+
 package edu.ul.android.favorite;
 
 public class Validators {
@@ -8,7 +9,8 @@ public class Validators {
      * @return true if valid, else false
      */
     public Boolean isIpAddress(String s) {
-        return s.matches("\\d+\\.\\d+\\.\\d+\\.\\d+");
+        // TODO: put your code here
+        return s.matches("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}");
     }
 
     /**
@@ -18,7 +20,7 @@ public class Validators {
      */
     public Boolean isBinaryValue(String s) {
         // TODO: put your code here
-        return true;
+        return s.matches("-?[01]+");
     }
 
     /**
@@ -28,6 +30,6 @@ public class Validators {
      */
     public Boolean isHexadecimalValue(String s) {
         // TODO: put your code here
-        return true;
+        return s.matches("-?[0-9a-fA-F]+");
     }
 }
