@@ -35,20 +35,12 @@ public class ValidatorsTest {
     @Test
     public void isBinaryValue() {
         // TODO: write test assertions for .isBinaryValue
-        assertTrue(V.isBinaryValue("101010"));
-        assertFalse(V.isBinaryValue("1010A"));
-        assertTrue(V.isBinaryValue("-1010"));
-        assertFalse(V.isBinaryValue("10-10"));
+        assertFalse("TODO", true);
     }
 
     @Test
     public void isHexadecimalValue() {
         // TODO: write test assertions for .isHexadecimalValue
-        assertTrue(V.isHexadecimalValue("123456"));
-        assertTrue(V.isHexadecimalValue("ABCDEF"));
-        assertTrue(V.isHexadecimalValue("ABC789"));
-        assertFalse(V.isHexadecimalValue("0000G"));
-        assertTrue(V.isHexadecimalValue("-0000"));
-        assertFalse(V.isHexadecimalValue("00-00"));
+        assertFalse("TODO", true);
     }
 }
