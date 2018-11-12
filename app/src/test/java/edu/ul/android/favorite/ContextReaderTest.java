@@ -5,7 +5,7 @@ import android.content.Context;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -30,10 +30,16 @@ public class ContextReaderTest {
     @Test
     public void testMyName() {
         // TODO: do the same thing here so myName always returns "com.google.search"
+        when(context.getPackageName()).thenReturn("com.google.search");
+        ContextReader reader = new ContextReader(context);
+        assertThat(reader.myName(), is("com.google.search"));
     }
 
     @Test
     public void testMyPermitted() {
         // TODO: do the same thing here so myPermitted always returns 0 for any strings
+        when(context.checkSelfPermission(anyString())).thenReturn(0);
+        ContextReader reader = new ContextReader(context);
+        assertThat(reader.myPermitted(), is(0));
     }
 }

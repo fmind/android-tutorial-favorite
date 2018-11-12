@@ -36,13 +36,13 @@
             android:layout_gravity="center_horizontal" />
 
         <CheckBox
+            android:id="@+id/ip_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="IP Address valid ?"
-            android:id="@+id/ip_check"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:clickable="false" />
+            android:clickable="false"
+            android:text="IP Address valid ?" />
 
         <Space
             android:layout_width="match_parent"
@@ -72,13 +72,13 @@
             android:layout_gravity="center_horizontal" />
 
         <CheckBox
+            android:id="@+id/bin_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Binary Value valid ?"
-            android:id="@+id/bin_check"
             android:layout_gravity="center_horizontal"
             android:checked="false"
-            android:clickable="false" />
+            android:clickable="false"
+            android:text="Binary Value valid ?" />
 
         <Space
             android:layout_width="match_parent"
@@ -108,12 +108,13 @@
             android:layout_gravity="center_horizontal" />
 
         <CheckBox
+            android:id="@+id/hex_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hexadecimal Value valid ?"
-            android:id="@+id/hex_check"
             android:layout_gravity="center_horizontal"
-            android:checked="false" />
+            android:checked="false"
+            android:clickable="false"
+            android:text="Hexadecimal Value valid ?" />
 
     </LinearLayout>
 
