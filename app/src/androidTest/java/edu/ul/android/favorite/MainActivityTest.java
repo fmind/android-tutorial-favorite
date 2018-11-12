@@ -62,7 +62,7 @@ public class MainActivityTest {
 
     @Test
     public void onIpAddress() {
-        // TODO: you should write a complete scenario were:
+        // TODO: you should write a complete scenario where:
         // - you set the text value of the ip_input view
         // - perform a click on the ip_button view
         // - verify that ip_check is checked if the IP Address is correct and the inverse as well
