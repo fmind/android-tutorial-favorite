@@ -1,3 +1,4 @@
+
 package edu.ul.android.favorite;
 
 public class Validators {

@@ -113,8 +113,7 @@
             android:text="Hexadecimal Value valid ?"
             android:id="@+id/hex_check"
             android:layout_gravity="center_horizontal"
-            android:checked="false"
-            android:clickable="false" />
+            android:checked="false" />
 
     </LinearLayout>
 
