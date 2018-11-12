@@ -6,11 +6,12 @@ public class ContextReader {
     private Context context;
 
     /**
-     * Construct a custom context reader for the Android
+     * Construct a context reader for Android
      * @param context an Android context object
      */
     public ContextReader(Context context) {
         this.context = context;
+
         context.getPackageResourcePath();
     }
 

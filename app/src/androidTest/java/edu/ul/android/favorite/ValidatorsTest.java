@@ -1,14 +1,15 @@
 package edu.ul.android.favorite;
 
-import android.support.test.filters.SmallTest;
-import android.support.test.runner.AndroidJUnit4;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import androidx.test.filters.SmallTest;
+import androidx.test.runner.AndroidJUnit4;
+
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertTrue;
+
 
 @RunWith(AndroidJUnit4.class)
 @SmallTest
