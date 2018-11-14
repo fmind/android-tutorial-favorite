@@ -10,7 +10,7 @@ public class Validators {
      */
     public Boolean isIpAddress(String s) {
         // TODO: put your code here
-        return s.matches("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}");
+        return false;
     }
 
     /**
@@ -20,7 +20,7 @@ public class Validators {
      */
     public Boolean isBinaryValue(String s) {
         // TODO: put your code here
-        return s.matches("-?[01]+");
+        return false;
     }
 
     /**
@@ -30,6 +30,6 @@ public class Validators {
      */
     public Boolean isHexadecimalValue(String s) {
         // TODO: put your code here
-        return s.matches("-?[0-9a-fA-F]+");
+        return false;
     }
 }
